@@ -131,9 +131,23 @@ describe('Format', function() {
   
   describe('options', function () {
     
-    it('should be able to normalize a phone number before parsing it', function() {
+    it('should be able to normalize a phone number before parsing it with default options', function() {
       assert.deepEqual(
         PhoneFormatter.format("(212) 555-1212", "NNN.NNN.NNNN"),
+        "212.555.1212"
+      );
+    });
+
+    it('should be able to normalize a phone number before parsing it with options.normalize `true`', function() {
+      assert.deepEqual(
+        PhoneFormatter.format("(212) 555-1212", "NNN.NNN.NNNN", { normalize: true }),
+        "212.555.1212"
+      );
+    });
+
+    it('should not normalize a phone number before parsing it with options.normalize `false`', function() {
+      assert.notDeepEqual(
+        PhoneFormatter.format("(212) 555-1212", "NNN.NNN.NNNN", { normalize: false }),
         "212.555.1212"
       );
     });

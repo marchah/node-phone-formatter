@@ -11,9 +11,9 @@ function format(phoneNumber, formatString, options) {
   if (!phoneNumber) return;
 
   // Normalize the phone number first unless not asked to do so in the options
-  if (!options || !options.normalize) {
-    phoneNumber = normalize(phoneNumber)
-  };
+  if (!options || !!options.normalize) {
+    phoneNumber = normalize(phoneNumber);
+  }
   for ( var i = 0, l = phoneNumber.length; i < l; i++ ) {
     formatString = formatString.replace('N', phoneNumber[i]);
   }
