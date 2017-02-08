@@ -1,5 +1,5 @@
 {
-  "name": "phone-formatter",
+  "name": "node-phone-formatter",
   "version": "0.0.3",
   "main": "./index.js",
   "description": "Parse and format telephone numbers.",
