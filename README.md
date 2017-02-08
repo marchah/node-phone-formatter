@@ -72,6 +72,7 @@ Right now, this library is incredibly American-centric and that kind of stinks, 
 
 ## Release History
 
+* 0.0.3: Handle undefined phone number.
 * 0.0.2: Normalize phone numbers by default.
 * 0.0.1: Just two methods and some tests.
 
