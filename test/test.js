@@ -40,11 +40,6 @@ describe('Normalize', function() {
       undefined
     );
   });
-
-  it('test', () => {
-    console.log(PhoneFormatter.normalize("+86-574-2772681"));
-    console.log(PhoneFormatter.normalize("+852 2332 5051"));
-  })
 });
 
 describe('Format', function() {
