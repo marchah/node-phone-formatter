@@ -16,7 +16,12 @@ describe('Normalize', function() {
     "+1 (212) 555-1212",
     "+1 (212) 555 - 1212",
     "12125551212",
+    "+45 (212) 5551212",
     "+45 (212) 555-1212",
+    "+45-(212)-5551212",
+    "+45-(212)-555-1212",
+    "+45 212 555 1212",
+    "+45-212-555-1212",
     "2125551212",
   ]
   
@@ -35,6 +40,11 @@ describe('Normalize', function() {
       undefined
     );
   });
+
+  it('test', () => {
+    console.log(PhoneFormatter.normalize("+86-574-2772681"));
+    console.log(PhoneFormatter.normalize("+852 2332 5051"));
+  })
 });
 
 describe('Format', function() {
