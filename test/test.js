@@ -28,7 +28,13 @@ describe('Normalize', function() {
       );
     });
   });
-  
+
+  it('should skip undefined phone number', function() {
+      assert.deepEqual(
+        PhoneFormatter.normalize(undefined),
+        undefined
+      );
+    });
 });
 
 describe('Format', function() {

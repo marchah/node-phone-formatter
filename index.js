@@ -1,4 +1,6 @@
 function normalize(phoneNumber) {
+  if (!phoneNumber) return;
+
   return phoneNumber.replace(
     /^[\+\d{1,3}\-\s]*\(?([0-9]{3})\)?[-. ]*([0-9]{3})[-. ]*([0-9]{4})$/,
     "$1$2$3"
