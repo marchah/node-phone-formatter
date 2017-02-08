@@ -35,6 +35,13 @@ describe('Format', function() {
   var phoneNumber = "2125551212"
   
   describe('strings', function () {
+
+    it('should be able to format undefined number with (NNN) NNN NNNN', function() {
+      assert.deepEqual(
+        PhoneFormatter.format(undefined, "(NNN) NNN NNNN"),
+        undefined
+      );
+    });
     
     it('should be able to format numbers with (NNN) NNN NNNN', function() {
       assert.deepEqual(
