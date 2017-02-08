@@ -1,35 +1,33 @@
 {
   "name": "phone-formatter",
-  "description": "Parse and format telephone numbers.",
   "version": "0.0.2",
-  "homepage": "https://github.com/stevekinney/node-phone-formatter",
+  "main": "./index.js",
+  "description": "Parse and format telephone numbers.",
+  "scripts": {
+    "test": "NODE_ENV=test NODE_PATH=./test node ./node_modules/mocha/bin/mocha --harmony "
+  },
+  "keywords": [
+    "phone",
+    "formatter",
+    "format",
+    "normalize",
+    "normalizer"
+  ],
   "author": {
     "name": "Steve Kinney",
     "email": "hello@stevekinney.net",
     "url": "http://stevekinney.net"
   },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/stevekinney/node-phone-formatter.git"
+    "url": "git://github.com/marchah/node-phone-formatter.git"
   },
   "bugs": {
-    "url": "https://github.com/stevekinney/node-phone-formatter/issues"
+    "url": "https://github.com/marchah/node-phone-formatter/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/stevekinney/phone-formatter/blob/master/LICENSE-MIT"
-    }
-  ],
-  "main": "index.js",
-  "engines": {
-    "node": ">= 0.6.0"
-  },
-  "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
-  },
-  "devDependencies": {
-    "mocha": "~1.8.1"
-  },
-  "keywords": []
+  "homepage": "https://github.com/marchah/node-phone-formatter",
+  "license": "MIT"
 }
